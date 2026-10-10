@@ -763,6 +763,8 @@ html.js .shero-media img { transform: scale(1.06); animation: settle 3s var(--ea
 .rb:hover rect, .rb:focus rect { filter: brightness(1.15); }
 .off-arrow { fill: none; stroke: var(--ink-2); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .ruler-svg .water-mark { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 4 4; }
+.ruler-svg .talc-br { fill: none; stroke: var(--pp); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.ruler-svg .talc-l { fill: var(--pp); }
 .ruler-list { display: none; }
 .ruler-list li { display: grid; grid-template-columns: 6.2em 1fr auto; align-items: center; gap: 12px; padding: 13px 0 13px 16px; border-bottom: 1px solid var(--line); position: relative; }
 .ruler-list li::before { content: ''; position: absolute; left: 0; top: 12px; bottom: 12px; width: 4px; border-radius: 2px; background: var(--mix); }
@@ -773,6 +775,8 @@ html.js .shero-media img { transform: scale(1.06); animation: settle 3s var(--ea
 .ruler-list span { font: 500 .85rem/1 var(--mono); color: var(--ink); }
 .ruler-list em { font: 500 .66rem/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; font-style: normal; color: var(--ink-3); }
 .ruler-list .pp em, .ruler-list .hdpe em { color: var(--hdpe); }
+.ruler-list .talc::before { background: repeating-linear-gradient(180deg, var(--pp) 0 4px, transparent 4px 7px); }
+.ruler-list .talc em { color: var(--pp); }
 html.js .ruler-fig .rb rect { transform-box: fill-box; transform-origin: 50% 50%; transform: scaleY(0); transition: transform .9s var(--ease); }
 html.js .ruler-fig.is-in .rb rect { transform: none; }
 html.js .ruler-fig .rb.hdpe rect { transition-delay: .15s; } html.js .ruler-fig .rb.ps rect { transition-delay: .3s; }
