@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<title>Eco Plastics · Two directions</title>
+<meta name="theme-color" content="#0A0B0C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2040%2040%22%3E%3Crect%20width=%2240%22%20height=%2240%22%20rx=%228%22%20fill=%22%23F3F1EC%22/%3E%3Cg%20transform=%22translate%286%206%29%20scale%28.7%29%22%3E%3Cg%20fill=%22%23145A3A%22%3E%3Cpath%20d=%22M18.5%202.06A18%2018%200%200%200%2018.5%2037.94Z%22/%3E%3C/g%3E%3Cg%20fill=%22%23121314%22%3E%3Cpath%20d=%22M21.5%202.06A18%2018%200%200%201%2021.5%2037.94Z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E">
+<style>
+  @font-face { font-family: 'Archivo'; src: url(assets/fonts/archivo.woff2) format('woff2-variations'); font-weight: 100 900; font-stretch: 62% 125%; font-display: swap; }
+  @font-face { font-family: 'Newsreader'; src: url(assets/fonts/newsreader.woff2) format('woff2-variations'); font-weight: 200 800; font-display: swap; }
+  @font-face { font-family: 'Newsreader'; src: url(assets/fonts/newsreader-italic.woff2) format('woff2-variations'); font-weight: 200 800; font-style: italic; font-display: swap; }
+  @font-face { font-family: 'Inter'; src: url(assets/fonts/inter.woff2) format('woff2-variations'); font-weight: 100 900; font-display: swap; }
+  @font-face { font-family: 'JetBrains Mono'; src: url(assets/fonts/jbmono.woff2) format('woff2-variations'); font-weight: 100 800; font-display: swap; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { font: 400 1rem/1.55 'Inter', system-ui, sans-serif; background: #0A0B0C; -webkit-font-smoothing: antialiased; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; min-height: 100svh; }
+  .side { position: relative; display: flex; flex-direction: column; padding: clamp(28px, 4vw, 64px); gap: clamp(18px, 3vh, 32px); text-decoration: none; overflow: hidden; }
+  .side.a { background: #0A0B0C; color: #ECE8DF; }
+  .side.b { background: #F3F1EC; color: #141516; }
+  .tag { font: 500 .75rem/1 'JetBrains Mono', ui-monospace, monospace; letter-spacing: .14em; text-transform: uppercase; opacity: .7; display: flex; justify-content: space-between; }
+  .brand { display: inline-flex; align-items: center; gap: 12px; }
+  .mark { width: 30px; height: 30px; }
+  .a .mark { fill: #ECE8DF; }
+  .b .mark-l { fill: #145A3A; } .b .mark-r { fill: #141516; }
+  .a h2 { font: 800 clamp(2.4rem, 5vw, 5.4rem)/.9 'Archivo', sans-serif; font-stretch: 125%; text-transform: uppercase; margin: 0; }
+  .b h2 { font: 360 clamp(2.8rem, 5.6vw, 6.2rem)/.95 'Newsreader', Georgia, serif; letter-spacing: -.03em; margin: 0; }
+  .b h2 em { color: #145A3A; }
+  .says { max-width: 40ch; font-size: clamp(1rem, 1.15vw, 1.25rem); opacity: .85; margin: 0; }
+  .thumb { margin-top: auto; border-radius: 4px; overflow: hidden; box-shadow: 0 30px 60px -30px rgba(0,0,0,.6); transition: transform .6s cubic-bezier(.2,.75,.2,1); }
+  .thumb img { display: block; width: 100%; height: auto; }
+  .side:hover .thumb, .side:focus-visible .thumb { transform: translateY(-6px); }
+  .go { display: inline-flex; align-items: center; gap: 10px; font: 500 .8rem/1 'JetBrains Mono', monospace; letter-spacing: .1em; text-transform: uppercase; }
+  .go span { display: inline-block; transition: transform .3s; }
+  .side:hover .go span { transform: translateX(6px); }
+  .a .go { color: #8ED9A6; } .b .go { color: #145A3A; }
+  .note { grid-column: 1 / -1; background: #141516; color: #A9A59C; font: 400 .8rem/1.6 'JetBrains Mono', monospace; padding: 14px clamp(28px, 4vw, 64px); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+  .note b { color: #ECE8DF; font-weight: 500; }
+  :focus-visible { outline: 2px solid #8ED9A6; outline-offset: -6px; }
+  @media (max-width: 760px) { .split { grid-template-columns: 1fr; } .side { min-height: 80svh; } .a h2 { font-stretch: 100%; } }
+</style>
+</head>
+<body>
+<main class="split">
+  <a class="side a" href="a/">
+    <p class="tag"><span>Direction A</span><span>Dark</span></p>
+    <span class="brand"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true" fill="currentColor"><path d="M4.41 11A18 18 0 0 1 35.59 11Z"/><path d="M3.03 14A18 18 0 1 0 36.97 14Z"/></svg></span>
+    <h2>Monolith</h2>
+    <p class="says">Cinematic and assertive, built for the big screen. Says: this is big, and the site it runs on is already standing.</p>
+    <span class="go">Open direction A <span>&rarr;</span></span>
+    <div class="thumb"><img src="assets/img/chooser-a.webp" width="1200" height="675" alt="Direction A homepage: a dark hero with a heap of wheelie bins and the headline Transforming plastic recycling across Australia."></div>
+  </a>
+  <a class="side b" href="b/">
+    <p class="tag"><span>Direction B</span><span>Light</span></p>
+    <span class="brand"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><g class="mark-l"><path d="M18.5 2.06A18 18 0 0 0 18.5 37.94Z"/></g><g class="mark-r"><path d="M21.5 2.06A18 18 0 0 1 21.5 37.94Z"/></g></svg></span>
+    <h2>Specimen</h2>
+    <p class="says">Editorial and precise, like a research prospectus. Says: we understand this material better than anyone, and we can prove it.</p>
+    <span class="go">Open direction B <span>&rarr;</span></span>
+    <div class="thumb"><img src="assets/img/chooser-b.webp" width="1200" height="675" alt="Direction B homepage: a light catalogue photograph of a wheelie bin, bumper bar and pallets under a serif headline."></div>
+  </a>
+  <p class="note"><span><b>Same facts, two looks.</b> Press P on either page to present, then use the arrow keys or a clicker. F for full screen, Esc to exit.</span><span>Unlisted preview. Hidden from search engines.</span></p>
+</main>
+</body>
+</html>
