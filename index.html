@@ -1,66 +1,232 @@
 <!doctype html>
-<html lang="en-AU">
+<html lang="en-AU" data-page="home">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
-<title>Eco Plastics · Two directions</title>
+<title>Eco Plastics · Transforming plastic recycling across Australia</title>
+<meta name="description" content="Wheelie bins, car bumper bars and plastic pallets, collected in Sydney, Canberra and Adelaide and brought to North Geelong. A Recycle Group partnership.">
 <meta name="theme-color" content="#0A0B0C">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2040%2040%22%3E%3Crect%20width=%2240%22%20height=%2240%22%20rx=%228%22%20fill=%22%23F3F1EC%22/%3E%3Cg%20transform=%22translate%286%206%29%20scale%28.7%29%22%3E%3Cg%20fill=%22%23145A3A%22%3E%3Cpath%20d=%22M18.5%202.06A18%2018%200%200%200%2018.5%2037.94Z%22/%3E%3C/g%3E%3Cg%20fill=%22%23121314%22%3E%3Cpath%20d=%22M21.5%202.06A18%2018%200%200%201%2021.5%2037.94Z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E">
-<style>
-  @font-face { font-family: 'Archivo'; src: url(assets/fonts/archivo.woff2) format('woff2-variations'); font-weight: 100 900; font-stretch: 62% 125%; font-display: swap; }
-  @font-face { font-family: 'Newsreader'; src: url(assets/fonts/newsreader.woff2) format('woff2-variations'); font-weight: 200 800; font-display: swap; }
-  @font-face { font-family: 'Newsreader'; src: url(assets/fonts/newsreader-italic.woff2) format('woff2-variations'); font-weight: 200 800; font-style: italic; font-display: swap; }
-  @font-face { font-family: 'Inter'; src: url(assets/fonts/inter.woff2) format('woff2-variations'); font-weight: 100 900; font-display: swap; }
-  @font-face { font-family: 'JetBrains Mono'; src: url(assets/fonts/jbmono.woff2) format('woff2-variations'); font-weight: 100 800; font-display: swap; }
-  *, *::before, *::after { box-sizing: border-box; }
-  html, body { margin: 0; }
-  body { font: 400 1rem/1.55 'Inter', system-ui, sans-serif; background: #0A0B0C; -webkit-font-smoothing: antialiased; }
-  .split { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; min-height: 100svh; }
-  .side { position: relative; display: flex; flex-direction: column; padding: clamp(28px, 4vw, 64px); gap: clamp(18px, 3vh, 32px); text-decoration: none; overflow: hidden; }
-  .side.a { background: #0A0B0C; color: #ECE8DF; }
-  .side.b { background: #F3F1EC; color: #141516; }
-  .tag { font: 500 .75rem/1 'JetBrains Mono', ui-monospace, monospace; letter-spacing: .14em; text-transform: uppercase; opacity: .7; display: flex; justify-content: space-between; }
-  .brand { display: inline-flex; align-items: center; gap: 12px; }
-  .mark { width: 30px; height: 30px; }
-  .a .mark { fill: #ECE8DF; }
-  .b .mark-l { fill: #145A3A; } .b .mark-r { fill: #141516; }
-  .a h2 { font: 800 clamp(2.4rem, 5vw, 5.4rem)/.9 'Archivo', sans-serif; font-stretch: 125%; text-transform: uppercase; margin: 0; }
-  .b h2 { font: 360 clamp(2.8rem, 5.6vw, 6.2rem)/.95 'Newsreader', Georgia, serif; letter-spacing: -.03em; margin: 0; }
-  .b h2 em { color: #145A3A; }
-  .says { max-width: 40ch; font-size: clamp(1rem, 1.15vw, 1.25rem); opacity: .85; margin: 0; }
-  .thumb { margin-top: auto; border-radius: 4px; overflow: hidden; box-shadow: 0 30px 60px -30px rgba(0,0,0,.6); transition: transform .6s cubic-bezier(.2,.75,.2,1); }
-  .thumb img { display: block; width: 100%; height: auto; }
-  .side:hover .thumb, .side:focus-visible .thumb { transform: translateY(-6px); }
-  .go { display: inline-flex; align-items: center; gap: 10px; font: 500 .8rem/1 'JetBrains Mono', monospace; letter-spacing: .1em; text-transform: uppercase; }
-  .go span { display: inline-block; transition: transform .3s; }
-  .side:hover .go span { transform: translateX(6px); }
-  .a .go { color: #8ED9A6; } .b .go { color: #145A3A; }
-  .note { grid-column: 1 / -1; background: #141516; color: #A9A59C; font: 400 .8rem/1.6 'JetBrains Mono', monospace; padding: 14px clamp(28px, 4vw, 64px); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-  .note b { color: #ECE8DF; font-weight: 500; }
-  :focus-visible { outline: 2px solid #8ED9A6; outline-offset: -6px; }
-  @media (max-width: 760px) { .split { grid-template-columns: 1fr; } .side { min-height: 80svh; } .a h2 { font-stretch: 100%; } }
-</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2040%2040%22%3E%3Crect%20width=%2240%22%20height=%2240%22%20rx=%228%22%20fill=%22%230A0B0C%22/%3E%3Cg%20transform=%22translate%286%206%29%20scale%28.7%29%22%20fill=%22%23ECE8DF%22%3E%3Cpath%20d=%22M4.41%2011A18%2018%200%200%201%2035.59%2011Z%22/%3E%3Cpath%20d=%22M3.03%2014A18%2018%200%201%200%2036.97%2014Z%22/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/a-hero-2400.webp" imagesrcset="assets/img/a-hero-1280.webp 1280w, assets/img/a-hero-2400.webp 2400w" imagesizes="100vw" media="(min-width: 701px)"><link rel="stylesheet" href="assets/site.css?v=2610102029">
 </head>
 <body>
-<main class="split">
-  <a class="side a" href="a/">
-    <p class="tag"><span>Direction A</span><span>Dark</span></p>
-    <span class="brand"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true" fill="currentColor"><path d="M4.41 11A18 18 0 0 1 35.59 11Z"/><path d="M3.03 14A18 18 0 1 0 36.97 14Z"/></svg></span>
-    <h2>Monolith</h2>
-    <p class="says">Cinematic and assertive, built for the big screen. Says: this is big, and the site it runs on is already standing.</p>
-    <span class="go">Open direction A <span>&rarr;</span></span>
-    <div class="thumb"><img src="assets/img/chooser-a.webp" width="1200" height="675" alt="Direction A homepage: a dark hero with a heap of wheelie bins and the headline Transforming plastic recycling across Australia."></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <a class="brand" href="" aria-label="Eco Plastics, home"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true" fill="currentColor"><path d="M4.41 11A18 18 0 0 1 35.59 11Z"/><path d="M3.03 14A18 18 0 1 0 36.97 14Z"/></svg><span class="wordmark">Eco Plastics</span></a>
+  <nav class="nav-links" aria-label="Chapters">
+    <a href="opportunity/"><i>01</i>Opportunity</a>
+    <a href="streams/"><i>02</i>Streams</a>
+    <a href="separation/"><i>03</i>Separation</a>
+    <a href="network/"><i>04</i>Network</a>
+    <a href="built/"><i>05</i>Already built</a>
+    <a href="next/"><i>06</i>Next step</a>
+  </nav>
+  <a class="present-btn" href="present/">Present <kbd>P</kbd></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu><span>Menu</span><i aria-hidden="true"></i></button>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav class="menu-inner wrap" aria-label="All chapters">
+    <a class="menu-home" href="">Eco Plastics <span>Home</span></a>
+    <ol class="menu-list">
+      <li><a href="opportunity/"><span class="n">01</span><b>The opportunity</b><span class="l">Why rigid plastics, and why now.</span></a></li>
+      <li><a href="streams/"><span class="n">02</span><b>The streams</b><span class="l">Wheelie bins, bumper bars and pallets, one by one.</span></a></li>
+      <li><a href="separation/"><span class="n">03</span><b>Separation</b><span class="l">HDPE and PP both float. So they never meet.</span></a></li>
+      <li><a href="network/"><span class="n">04</span><b>The network</b><span class="l">Three markets. One corridor each. One site.</span></a></li>
+      <li><a href="built/"><span class="n">05</span><b>Already built</b><span class="l">The site, the systems and the people run today.</span></a></li>
+      <li><a href="next/"><span class="n">06</span><b>Next step</b><span class="l">Walk the site. Then run a trial load.</span></a></li>
+    </ol>
+    <a class="menu-present" href="present/">Present the full story <span>&rarr;</span></a>
+  </nav>
+</div>
+<div class="hud" aria-hidden="true">
+  <div class="hud-bar"><i data-hud-bar></i></div>
+  <div class="hud-meta">
+    <span class="hud-where">Eco Plastics</span>
+    <span data-hud-count>01</span>
+    <span class="hud-keys">&larr; &rarr; to move · F full screen · Esc to exit</span>
+    <button type="button" data-exit tabindex="-1">Exit</button>
+  </div>
+</div>
+<main id="main">
+  <section class="hero" id="top" data-stop>
+    <picture class="hero-media">
+      <source media="(max-width: 700px)" srcset="assets/img/a-hero-m-900.webp">
+      <img src="assets/img/a-hero-2400.webp" srcset="assets/img/a-hero-1280.webp 1280w, assets/img/a-hero-2400.webp 2400w" sizes="100vw" width="2400" height="1340" alt="A heap of used wheelie bins with red, yellow and green lids, lit from one side in the dark." fetchpriority="high">
+    </picture>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-inner wrap">
+      <p class="eyebrow" data-reveal><span>Launching at North Geelong</span><span class="sep">/</span><span>A Recycle Group partnership</span></p>
+      <h1 class="display hero-title">
+        <span class="ln"><span>Transforming</span></span>
+        <span class="ln"><span>plastic recycling</span></span>
+        <span class="ln"><span>across Australia.</span></span>
+      </h1>
+      <div class="hero-foot">
+        <p class="lede" data-reveal>Wheelie bins, car bumper bars and plastic pallets. Collected in Sydney, Canberra and Adelaide, and brought to one site in North Geelong.</p>
+        <dl class="hero-meta" data-reveal>
+          <div><dt>Streams</dt><dd>3</dd></div>
+          <div><dt>Markets</dt><dd>3</dd></div>
+          <div><dt>Site</dt><dd>1</dd></div>
+        </dl>
+      </div>
+    </div>
+    <p class="prepared"><span>Prepared for Erik Buck and John Elliot</span><span>October 2026</span></p>
+  </section>
+<section class="manifesto wrap" data-stop>
+  <p class="kicker" data-reveal><b>00</b> The short version</p>
+  <p class="mf" data-words>In 2023–24, Australia recovered about 14% of the plastic that reached end of life. The other 86% wasn’t. Wheelie bins, bumper bars and pallets are the easiest place to change that. Eco Plastics is being built to do it, inside a site that already runs.</p>
+  <p class="mf-src">Recovery figure: Australian Plastics Flows and Fates 2023–24, as reported by WMRR (2025).</p>
+</section>
+<section class="trio wrap" data-stop>
+  <a class="trio-card" href="streams/" data-reveal>
+    <span class="trio-l">Streams</span>
+    <span class="trio-n">3</span>
+    <ul>
+      <li>Wheelie bins <span class="chips"><i class="chip hdpe">HDPE</i></span></li>
+      <li>Car bumper bars <span class="chips"><i class="chip pp">PP</i></span></li>
+      <li>Plastic pallets <span class="chips"><i class="chip hdpe">HDPE</i><i class="chip pp">PP</i></span></li>
+    </ul>
+    <span class="go">The streams &rarr;</span>
   </a>
-  <a class="side b" href="b/">
-    <p class="tag"><span>Direction B</span><span>Light</span></p>
-    <span class="brand"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><g class="mark-l"><path d="M18.5 2.06A18 18 0 0 0 18.5 37.94Z"/></g><g class="mark-r"><path d="M21.5 2.06A18 18 0 0 1 21.5 37.94Z"/></g></svg></span>
-    <h2>Specimen</h2>
-    <p class="says">Editorial and precise, like a research prospectus. Says: we understand this material better than anyone, and we can prove it.</p>
-    <span class="go">Open direction B <span>&rarr;</span></span>
-    <div class="thumb"><img src="assets/img/chooser-b.webp" width="1200" height="675" alt="Direction B homepage: a light catalogue photograph of a wheelie bin, bumper bar and pallets under a serif headline."></div>
+  <a class="trio-card" href="network/" data-reveal>
+    <span class="trio-l">Markets</span>
+    <span class="trio-n">3</span>
+    <ul>
+<li>Sydney <em>≈925 km</em></li><li>Canberra <em>≈715 km</em></li><li>Adelaide <em>≈700 km</em></li>    </ul>
+    <span class="go">The network &rarr;</span>
   </a>
-  <p class="note"><span><b>Same facts, two looks.</b> Press P on either page to present, then use the arrow keys or a clicker. F for full screen, Esc to exit.</span><span>Unlisted preview. Hidden from search engines.</span></p>
+  <a class="trio-card" href="built/" data-reveal>
+    <span class="trio-l">Site</span>
+    <span class="trio-n">1</span>
+    <ul>
+      <li>116 Furner Avenue, North Geelong</li>
+      <li>EPA Victoria <em>R000312600</em></li>
+      <li>Streams separated today <em>90+</em></li>
+    </ul>
+    <span class="go">Already built &rarr;</span>
+  </a>
+</section>
+<section class="index wrap" data-stop>
+  <div class="ix-head">
+    <p class="kicker" data-reveal><b>00</b> Six chapters</p>
+    <p class="ix-hint" data-reveal>Pick a chapter, or <a href="present/">present the whole story</a>.</p>
+  </div>
+  <div class="ix-wrap" data-hover-reveal>
+    <ol class="ix">
+      <li data-reveal><a href="opportunity/" data-ix="0"><span class="ix-n">01</span><span class="ix-t">The opportunity</span><span class="ix-l">Why rigid plastics, and why now.</span><span class="ix-go" aria-hidden="true">&rarr;</span></a></li>
+      <li data-reveal><a href="streams/" data-ix="1"><span class="ix-n">02</span><span class="ix-t">The streams</span><span class="ix-l">Wheelie bins, bumper bars and pallets, one by one.</span><span class="ix-go" aria-hidden="true">&rarr;</span></a></li>
+      <li data-reveal><a href="separation/" data-ix="2"><span class="ix-n">03</span><span class="ix-t">Separation</span><span class="ix-l">HDPE and PP both float. So they never meet.</span><span class="ix-go" aria-hidden="true">&rarr;</span></a></li>
+      <li data-reveal><a href="network/" data-ix="3"><span class="ix-n">04</span><span class="ix-t">The network</span><span class="ix-l">Three markets. One corridor each. One site.</span><span class="ix-go" aria-hidden="true">&rarr;</span></a></li>
+      <li data-reveal><a href="built/" data-ix="4"><span class="ix-n">05</span><span class="ix-t">Already built</span><span class="ix-l">The site, the systems and the people run today.</span><span class="ix-go" aria-hidden="true">&rarr;</span></a></li>
+      <li data-reveal><a href="next/" data-ix="5"><span class="ix-n">06</span><span class="ix-t">Next step</span><span class="ix-l">Walk the site. Then run a trial load.</span><span class="ix-go" aria-hidden="true">&rarr;</span></a></li>
+    </ol>
+    <div class="ix-float" aria-hidden="true">
+<div class="ix-img" data-ix="0"><img src="assets/img/opp-hero-1280.webp" width="1280" height="720" loading="lazy" alt=""></div><div class="ix-img" data-ix="1"><img src="assets/img/a-bin-720.webp" width="1280" height="720" loading="lazy" alt=""></div><div class="ix-img" data-ix="2"><img src="assets/img/sep-hero-1280.webp" width="1280" height="720" loading="lazy" alt=""></div><div class="ix-img" data-ix="3"><img src="assets/img/map-au-1280.webp" width="1280" height="720" loading="lazy" alt=""></div><div class="ix-img" data-ix="4"><img src="assets/img/built-hero-1280.webp" width="1280" height="720" loading="lazy" alt=""></div><div class="ix-img" data-ix="5"><img src="assets/img/pellets-pour-1280.webp" width="1280" height="720" loading="lazy" alt=""></div>    </div>
+  </div>
+</section>
+<section class="proof" data-stop>
+  <div class="wrap proof-head">
+    <div>
+      <p class="kicker" data-reveal><b>05</b> Already running</p>
+      <h2 class="display h2" data-reveal>North Geelong<br>runs today.</h2>
+    </div>
+    <p class="lede" data-reveal>Real photographs of the site Eco Plastics will run from.</p>
+    <a class="btn" href="built/" data-reveal>See what’s already built <i aria-hidden="true">&rarr;</i></a>
+  </div>
+  <div class="marquee" role="region" aria-label="Photographs of North Geelong">
+    <div class="marquee-track">
+      <figure><img src="assets/img/built-hero-1280.webp" width="1280" height="960" loading="lazy" alt="The main hall at Recycle North Geelong, signed bay by bay."><figcaption>The main hall, signed bay by bay.</figcaption></figure>
+      <figure><img src="assets/img/r-facility-1400.webp" width="1400" height="812" loading="lazy" alt="Signed drop-off bays for gas bottles, fire extinguishers and car batteries."><figcaption>Signed drop-off bays.</figcaption></figure>
+      <figure><img src="assets/img/r-forklift-bale-1200.webp" width="1200" height="1600" loading="lazy" alt="A forklift carrying a cardboard bale through the hall."><figcaption>A cardboard bale on the move.</figcaption></figure>
+      <figure><img src="assets/img/r-station-900.webp" width="900" height="522" loading="lazy" alt="A row of wheelie bins, each labelled for a different stream."><figcaption>Sorting bins, one per stream.</figcaption></figure>
+      <figure><img src="assets/img/r-mattress-line-900.webp" width="900" height="506" loading="lazy" alt="The mattress line, with a cage of recovered steel springs in front."><figcaption>The mattress line.</figcaption></figure>
+      <figure><img src="assets/img/r-unload-car-481.webp" width="481" height="640" loading="lazy" alt="Cars unloading in the undercover drive-through."><figcaption>Unloading, undercover.</figcaption></figure>
+      <figure><img src="assets/img/r-container-1200.webp" width="1200" height="675" loading="lazy" alt="A forklift loading baled steel into a shipping container."><figcaption>Baled steel going into a container.</figcaption></figure>
+      <figure><img src="assets/img/r-unload-trailer-481.webp" width="481" height="640" loading="lazy" alt="Two people unloading cardboard from a trailer."><figcaption>Trailer loads, unloaded by hand.</figcaption></figure>
+      <figure><img src="assets/img/r-cardboard-519.webp" width="519" height="812" loading="lazy" alt="Baled cardboard on a forklift in the hall."><figcaption>Baled cardboard.</figcaption></figure>
+      <figure><img src="assets/img/r-drive-in-480.webp" width="480" height="640" loading="lazy" alt="A car and trailer driving into the hall."><figcaption>The drive-in lane.</figcaption></figure>
+      <figure aria-hidden="true"><img src="assets/img/built-hero-1280.webp" width="1280" height="960" loading="lazy" alt=""><figcaption>The main hall, signed bay by bay.</figcaption></figure>
+      <figure aria-hidden="true"><img src="assets/img/r-facility-1400.webp" width="1400" height="812" loading="lazy" alt=""><figcaption>Signed drop-off bays.</figcaption></figure>
+      <figure aria-hidden="true"><img src="assets/img/r-forklift-bale-1200.webp" width="1200" height="1600" loading="lazy" alt=""><figcaption>A cardboard bale on the move.</figcaption></figure>
+      <figure aria-hidden="true"><img src="assets/img/r-station-900.webp" width="900" height="522" loading="lazy" alt=""><figcaption>Sorting bins, one per stream.</figcaption></figure>
+      <figure aria-hidden="true"><img src="assets/img/r-mattress-line-900.webp" width="900" height="506" loading="lazy" alt=""><figcaption>The mattress line.</figcaption></figure>
+      <figure aria-hidden="true"><img src="assets/img/r-unload-car-481.webp" width="481" height="640" loading="lazy" alt=""><figcaption>Unloading, undercover.</figcaption></figure>
+      <figure aria-hidden="true"><img src="assets/img/r-container-1200.webp" width="1200" height="675" loading="lazy" alt=""><figcaption>Baled steel going into a container.</figcaption></figure>
+      <figure aria-hidden="true"><img src="assets/img/r-unload-trailer-481.webp" width="481" height="640" loading="lazy" alt=""><figcaption>Trailer loads, unloaded by hand.</figcaption></figure>
+      <figure aria-hidden="true"><img src="assets/img/r-cardboard-519.webp" width="519" height="812" loading="lazy" alt=""><figcaption>Baled cardboard.</figcaption></figure>
+      <figure aria-hidden="true"><img src="assets/img/r-drive-in-480.webp" width="480" height="640" loading="lazy" alt=""><figcaption>The drive-in lane.</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="next wrap" data-stop>
+  <p class="kicker" data-reveal><b>06</b> Next step</p>
+  <h2 class="display next-title" data-reveal>Walk the site.<br>Then run a trial load.</h2>
+  <div class="next-grid">
+    <ol class="next-steps">
+      <li data-reveal><span class="n">01</span><b>Site visit</b><span>See North Geelong in person: the site, the fleet, the people and the systems.</span></li>
+      <li data-reveal><span class="n">02</span><b>Trial loads</b><span>One stream at a time, from each market, tracked batch by batch.</span></li>
+    </ol>
+    <address class="contact" data-reveal>
+  <span class="contact-label">Talk to</span>
+  <b>Richard Furnari</b>
+  <a href="tel:+61433225511">0433 225 511</a>
+  <a href="mailto:richard@recycle.au">richard@recycle.au</a>
+  <span class="addr">Recycle Group · <a href="tel:+61460555222">0460 555 222</a> · <a href="mailto:info@recycle.net.au">info@recycle.net.au</a></span>
+  <span class="addr">116 Furner Avenue, North Geelong VIC 3215</span>
+</address>
+  </div>
+  <div class="endorse" data-reveal>
+    <img src="assets/img/recycle-logo.svg" width="260" height="41" alt="Recycle Group" loading="lazy">
+    <p>Eco Plastics is a Recycle Group partnership.</p>
+<a class="btn" href="present/">Present the full story <i aria-hidden="true">&rarr;</i></a>  </div>
+</section>
 </main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href=""><svg class="mark" viewBox="0 0 40 40" aria-hidden="true" fill="currentColor"><path d="M4.41 11A18 18 0 0 1 35.59 11Z"/><path d="M3.03 14A18 18 0 1 0 36.97 14Z"/></svg><span class="wordmark">Eco Plastics</span></a>
+      <p>Transforming plastic recycling across Australia.</p>
+      <img class="foot-rg" src="assets/img/recycle-logo.svg" width="200" height="32" alt="Recycle Group" loading="lazy">
+      <p class="small">A Recycle Group partnership.</p>
+    </div>
+    <nav class="foot-col" aria-label="Chapters, footer">
+      <p class="foot-h">Chapters</p>
+      <ul>
+<li><a href="opportunity/">01 · The opportunity</a></li><li><a href="streams/">02 · The streams</a></li><li><a href="separation/">03 · Separation</a></li><li><a href="network/">04 · The network</a></li><li><a href="built/">05 · Already built</a></li><li><a href="next/">06 · Next step</a></li>        <li><a href="present/">Present the full story</a></li>
+      </ul>
+    </nav>
+    <nav class="foot-col" aria-label="Streams, footer">
+      <p class="foot-h">Streams</p>
+      <ul>
+<li><a href="streams/wheelie-bins/">Wheelie bins</a></li><li><a href="streams/bumper-bars/">Car bumper bars</a></li><li><a href="streams/pallets/">Plastic pallets</a></li>      </ul>
+    </nav>
+    <address class="foot-col">
+      <p class="foot-h">Talk to</p>
+      <b>Richard Furnari</b>
+      <a href="tel:+61433225511">0433 225 511</a>
+      <a href="mailto:richard@recycle.au">richard@recycle.au</a>
+      <span class="small">Recycle Group · <a href="tel:+61460555222">0460 555 222</a></span>
+      <span class="small">116 Furner Avenue, North Geelong VIC 3215</span>
+    </address>
+  </div>
+  <div class="wrap foot-notes">
+    <ol class="sources" aria-label="Sources">
+      <li id="src-apff"><a href="https://www.wmrr.asn.au/Web/Media/Media_Release/2025/ustralia-must-match-global-ambition-on-plastics-at-home.aspx" rel="noopener" target="_blank">Australian Plastics Flows and Fates 2023–24, as reported by WMRR (2025)</a></li>
+      <li id="src-abs"><a href="https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/jun-2024" rel="noopener" target="_blank">ABS, National, state and territory population, June 2024 (27,204,809 people)</a></li>
+      <li id="src-export"><a href="https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Environment_and_Communications/Wastereduction/Report/Chapter_7_-_Waste_export_regulations_and_the_Recycling_Modernisation_Fund" rel="noopener" target="_blank">Senate Environment and Communications References Committee, Chapter 7: Waste export regulations</a></li>
+      <li id="src-nwpap"><a href="https://www.agriculture.gov.au/sites/default/files/documents/national-waste-policy-action-plan-2019.docx" rel="noopener" target="_blank">National Waste Policy Action Plan 2019, national targets</a></li>
+      <li id="src-nsw"><a href="https://www.epa.nsw.gov.au/Your-environment/Waste/waste-levy/levy-regulated-area-and-levy-rates" rel="noopener" target="_blank">NSW EPA, Waste levy areas and levy rates</a></li>
+      <li id="src-vic"><a href="https://www.epa.vic.gov.au/waste-levy" rel="noopener" target="_blank">EPA Victoria, Waste levy</a></li>
+      <li id="src-rome2rio">Approximate road distances to Geelong (Rome2Rio, October 2026)</li>
+      <li id="src-density">Typical density ranges for PP, HDPE, PS, PET and PVC (industry reference values)</li>
+    </ol>
+    <p><b>Imagery.</b> Studio images of bins, bumpers, pallets, flake and pellets, the tip face and the wash tank are illustrative. Photographs of North Geelong show the actual site. App screens are live captures; nothing was submitted and customer names are blurred.</p>
+    <p>Confidential preview, prepared for Erik Buck and John Elliot. © 2026 Eco Plastics, a Recycle Group partnership.</p>
+  </div>
+</footer>
+<script src="assets/engine.js?v=2610102029" defer></script>
 </body>
 </html>
