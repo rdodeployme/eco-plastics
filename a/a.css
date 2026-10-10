@@ -381,3 +381,6 @@ html.js .mosaic figure:nth-child(4) { transition-delay: .3s; }
   html.js .hero-title .ln > span { transform: none; }
   html.js [data-reveal] { opacity: 1; transform: none; }
 }
+
+/* keep "down to here." together on the network slide */
+.network .h2 { font-size: clamp(2rem, 3.3vw, 4.4rem); }
