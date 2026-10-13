@@ -518,6 +518,16 @@ html.js .mf .w { color: rgba(236, 232, 223, .16); transition: color .5s var(--ea
 html.js .mf .w.on { color: var(--ink); }
 html.js .mf .w.num.on { color: var(--hdpe); }
 .mf-src { margin-top: clamp(24px, 4vh, 44px); font: 400 .74rem/1.5 var(--mono); color: var(--ink-3); }
+.manifesto { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); align-items: center; align-content: center; gap: clamp(40px, 6vw, 120px); }
+.mf-fig { margin: 0; justify-self: end; width: 100%; }
+.mf-fig .waffle { width: min(100%, 56vh, 520px); }
+.mf-fig figcaption { width: min(100%, 56vh, 520px); }
+.mf-fig figcaption b { color: var(--ink-2); font-weight: 500; }
+@media (max-width: 1100px) {
+  .manifesto { grid-template-columns: minmax(0, 1fr); }
+  .mf-fig { justify-self: start; }
+  .mf-fig .waffle, .mf-fig figcaption { margin-left: 0; width: min(100%, 440px); }
+}
 
 /* ---------- Home: three, three, one ---------- */
 .trio { min-height: var(--vh); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(16px, 2vw, 32px); align-content: center; padding: 110px 0 70px; }
