@@ -570,7 +570,8 @@ html.js .mf .w.num.on { color: var(--hdpe); }
 
 /* ---------- Home: proof strip ---------- */
 .proof { min-height: var(--vh); display: flex; flex-direction: column; justify-content: center; gap: clamp(28px, 5vh, 56px); padding: 110px 0 70px; overflow: hidden; }
-.proof-head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) auto; align-items: end; gap: 32px; }
+.proof-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 18px 32px; }
+.proof-head > div:first-child { grid-column: 1 / -1; }
 .proof-head .lede { max-width: 30ch; }
 .marquee { position: relative; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
 .marquee-track { display: flex; gap: 14px; width: max-content; animation: marquee 80s linear infinite; }
