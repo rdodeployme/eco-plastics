@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" href="../assets/img/touch-icon.png">
 <link rel="preload" href="../assets/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.css?v=2610141558">
+<link rel="stylesheet" href="../assets/site.css?v=2610141600">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -347,11 +347,12 @@
   const place = () => { raf = 0; const w = fl.offsetWidth, h = fl.offsetHeight; let px = x + 28, py = y - h / 2;
     if (px + w > innerWidth - 16) px = x - w - 28; py = Math.max(16, Math.min(innerHeight - h - 16, py));
     fl.style.transform = `translate3d(${px}px, ${py}px, 0)`; };
-  idx.addEventListener('pointermove', (e) => { x = e.clientX; y = e.clientY; if (!raf) raf = requestAnimationFrame(place); });
-  idx.addEventListener('pointerover', (e) => { const row = e.target.closest('.pidx-row');
+  const show = (e) => { const row = e.target.closest('.pidx-row');
     if (!row) { fl.classList.remove('on'); return; }
     if (img.getAttribute('src') !== row.dataset.preview) img.src = row.dataset.preview;
-    fl.classList.add('on'); });
+    fl.classList.add('on'); };
+  idx.addEventListener('pointermove', (e) => { x = e.clientX; y = e.clientY; show(e); if (!raf) raf = requestAnimationFrame(place); });
+  idx.addEventListener('pointerover', show);
   idx.addEventListener('pointerleave', () => fl.classList.remove('on'));
   addEventListener('scroll', () => fl.classList.remove('on'), { passive: true });
 })();
@@ -399,6 +400,6 @@
     <p>© 2026 Eco Plastics, a Recycle Group partnership. We don’t accept asbestos, prescribed waste, hazardous chemicals, firearms or explosives.</p>
   </div>
 </footer>
-<script src="../assets/engine.js?v=2610141558" defer></script>
+<script src="../assets/engine.js?v=2610141600" defer></script>
 </body>
 </html>
