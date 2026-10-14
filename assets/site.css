@@ -488,7 +488,7 @@ html.js .phero-title .ln > span { transform: translateY(105%); animation: rise 1
 
 /* hero map (full Australia, everything drawn) */
 .map-hero .route { stroke-width: 1.6; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 2.4s var(--ease) .5s forwards; }
-.map-hero .r-canberra { animation-delay: .75s; } .map-hero .r-sydney { animation-delay: 1s; }
+.map-hero .r-vic { animation-delay: .35s; } .map-hero .r-act { animation-delay: .75s; } .map-hero .r-nsw { animation-delay: 1s; }
 @keyframes draw { to { stroke-dashoffset: 0; } }
 .map-hero .h-name { font: 500 19px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; fill: var(--ink); }
 .map-hero .h-km { font: 500 15px/1 var(--mono); fill: var(--hdpe); }
@@ -1350,3 +1350,7 @@ html.is-present .vicsect .sites { grid-column: 2; grid-template-columns: minmax(
 @media (max-height: 820px) { html.is-present .vicsect .site p:not(.site-k):not(.site-reg) { display: none; } }
 html.is-present .levy-fig { margin-top: clamp(16px, 3vh, 40px); }
 html.is-present .menu-btn { display: none; }
+
+/* hero meta: keep each label on one line */
+.hero-meta dt { white-space: nowrap; }
+@media (max-width: 420px) { .hero-meta { gap: 22px; justify-content: space-between; } .hero-meta dt { letter-spacing: .08em; } }
